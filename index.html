@@ -8,7 +8,6 @@
 <script src="phonegap.js"></script>
 <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<script src="js/API/eventos.js" type="text/javascript"></script>
 </head> 
 <body> 
 
@@ -61,7 +60,9 @@
 		<h1>Video del lanzamineto</h1>
 	</div>
 	<div data-role="content">	
-		<li><a href="#video"> <video src="vid/video1.mp4" width="500" controls>autoplay loop controls></video> VIDEO </a></li>		
+		<li><a href="#video"> <video src="vid/video1.mp4" width="400" height="380" controls autoplay loop controls > </video> </a></li>
+       
+<button onclick="document.getElementById('vid/video1.mp4').pause()"> Stop video</button>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="top">
@@ -93,18 +94,15 @@
 	<div data-role="content">	
          <a href="#" onclick="vibrar(); return false;">
             <FONT FACE="arial" SIZE=10 COLOR=green> <b>Le Yo bien Contento :D </b><br>
-              <img src="img/foto3.jpg" alt=""><br>
-           </a>	
+              <img src="img/foto3.jpg" alt=""><br> </a>	
 		<a href="#" onclick="vibrar(); return false;">
             <FONT FACE="arial" SIZE=10 COLOR=brown><b>Apunto de ser lanzado...</b><br>
-              <img src="img/foto2.jpg" alt=""><br><br>
-            </a>
+              <img src="img/foto2.jpg" alt=""><br><br> </a>
         <a href="#" onclick="vibrar(); return false;">
             <FONT FACE="arial" SIZE=10 COLOR=purple><b>Lanzamineto</b><br>
-              <img src="img/foto1.jpg" alt=""><br><br>
-            </a>
+              <img src="img/foto1.jpg" alt=""><br><br> </a>
        
-	</div>
+	</div> 
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="top">
             <ul>
